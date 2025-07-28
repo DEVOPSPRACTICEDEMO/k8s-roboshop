@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb
+  namespace: roboshop
+  # deployment requires labels in metadata
   labels:
     component: mongodb
     project: roboshop
